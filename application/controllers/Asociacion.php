@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Oficina extends CI_Controller {
+class Asociacion extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
@@ -10,7 +10,7 @@ class Oficina extends CI_Controller {
 
 	public function index(){
 		$this->load->view('templates/header');
-		$this->load->view('configuracion/oficina');
+		$this->load->view('asociaciones/asociacion');
 		$this->load->view('templates/footer');
 	}
 
