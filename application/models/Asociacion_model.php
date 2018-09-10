@@ -1,10 +1,34 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Configuracion_model extends CI_Model {
+class Asociacion_model extends CI_Model {
 
 	function __construct(){
 		parent::__construct();
+	}
+
+	public function obtener_tipo_asociacion() {
+		$query=$this->db->get('sap_tipo_asociacion');
+		if ($query->num_rows() > 0) { return $query;
+		}else{ return FALSE; }
+	}
+
+	public function obtener_sector_asociacion() {
+		$query=$this->db->get('sap_sector_asociacion');
+		if ($query->num_rows() > 0) { return $query;
+		}else{ return FALSE; }
+	}
+
+	public function obtener_clase_asociacion() {
+		$query=$this->db->get('sap_clase_asociacion');
+		if ($query->num_rows() > 0) { return $query;
+		}else{ return FALSE; }
+	}
+
+	public function obtener_municipio_asociacion() {
+		$query=$this->db->get('org_municipio');
+		if ($query->num_rows() > 0) { return $query;
+		}else{ return FALSE; }
 	}
 
 	function insertar_oficina($data){

@@ -5,17 +5,21 @@ class Asociacion extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('configuracion_model');
+		$this->load->model('asociacion_model');
 	}
 
 	public function index(){
+		$data['tipo_asociacion'] = $this->asociacion_model->obtener_tipo_asociacion();
+		$data['sector_asociacion'] = $this->asociacion_model->obtener_sector_asociacion();
+		$data['clase_asociacion'] = $this->asociacion_model->obtener_clase_asociacion();
+		$data['municipio_asociacion'] = $this->asociacion_model->obtener_municipio_asociacion();
 		$this->load->view('templates/header');
-		$this->load->view('asociaciones/asociacion');
+		$this->load->view('asociaciones/asociacion', $data);
 		$this->load->view('templates/footer');
 	}
 
-	public function tabla_oficina(){
-		$this->load->view('configuracion/configuracion_ajax/tabla_oficina');
+	public function tabla_asociacion(){
+		$this->load->view('asociaciones/asociacion_ajax/tabla_asociacion');
 	}
 
 	public function gestionar_oficina(){
