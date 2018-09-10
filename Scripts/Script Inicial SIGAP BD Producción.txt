@@ -1,0 +1,57 @@
+INSERT INTO `mtps`.`org_rol` (`id_rol`, `nombre_rol`, `descripcion_rol`) VALUES ('69', 'Admin SIGAP', 'Administrador');
+-- --------------------------------------------------
+-- --------------------------------------------------
+
+
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('404', '18', 'Documentos', '', '3', '0', ' ', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('403', '18', 'Históricos', '', '6', '399', '/Historico', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('402', '18', 'Juntas directivas', '', '5', '399', '/Junta', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('401', '18', 'Afiliados', '', '4', '399', '/Afiliado', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('400', '18', 'Asociaciones', '', '3', '399', '/Asociacion', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('399', '18', 'Gestión de asociaciones', 'Módulo de asociaciones profesionales', '2', '0', ' ', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('398', '18', 'Usuarios', 'administración de usuarios', '1', '397', '/Usuarios', '', '0');
+INSERT INTO `mtps`.`org_modulo` (`id_modulo`, `id_sistema`, `nombre_modulo`, `descripcion_modulo`, `orden`, `dependencia`, `url_modulo`, `img_modulo`, `opciones_modulo`) VALUES ('397', '18', 'Administración', 'modulo de administración', '1', '0', ' ', '', '0');
+
+
+
+-- --------------------------------------------------
+-- --------------------------------------------------
+
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4672', '69', '404', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4671', '69', '404', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4670', '69', '404', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4669', '69', '404', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4668', '69', '403', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4667', '69', '403', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4666', '69', '403', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4665', '69', '403', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4664', '69', '402', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4663', '69', '402', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4662', '69', '402', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4661', '69', '402', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4660', '69', '401', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4659', '69', '401', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4658', '69', '401', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4657', '69', '401', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4656', '69', '400', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4655', '69', '400', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4654', '69', '400', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4653', '69', '400', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4652', '69', '399', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4651', '69', '399', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4650', '69', '399', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4649', '69', '399', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4648', '69', '398', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4647', '69', '398', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4646', '69', '398', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4645', '69', '398', '1', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4644', '69', '397', '4', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4643', '69', '397', '3', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4642', '69', '397', '2', '1', '1');
+INSERT INTO `mtps`.`org_rol_modulo_permiso` (`id_rol_permiso`, `id_rol`, `id_modulo`, `id_permiso`, `id_rango`, `estado`) VALUES ('4641', '69', '397', '1', '1', '1');
+
+
+-- --------------------------------------------------
+-- --------------------------------------------------
+
+
