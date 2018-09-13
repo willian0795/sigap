@@ -1,4 +1,3 @@
-<?php $ruta_segmento = trim(obtener_segmentos(1)); ?>
 </div>
    
     <script src="<?php echo base_url(); ?>assets/plugins/jquery/jquery.min.js"></script>
@@ -24,37 +23,11 @@
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/dropify/dist/js/dropify.js"></script>
-
-<?php if($ruta_segmento == "configuraciones/informacion_empleado"){ ?>
-    <script src="<?php echo base_url(); ?>assets/plugins/cropper/cropper.js"></script>
-<?php } ?>
-
-<?php if($ruta_segmento == "pagos/emergencias" || $ruta_segmento == "pasajes/pasaje"){ ?>
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-<?php } ?>
-
-<?php if($ruta_segmento == "viaticos/solicitud_viatico"){ ?>
-    
     <script src="<?php echo base_url(); ?>assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
-    
-    
-<?php } ?>
- 
-<?php if($ruta_segmento == "informes/menu_reportes"){ ?>
-    <!-- JS para reportes  -->
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/dataTables.buttons.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/buttons.flash.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/jszip.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/pdfmake.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/vfs_fonts.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/buttons.html5.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/buttons.print.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/plugins/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/plugins/ion-rangeslider/js/ion-rangeSlider/ion.rangeSlider-init.js"></script>
-<?php } ?>
 
 </body>
 

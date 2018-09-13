@@ -55,18 +55,8 @@ if(floatval($ua['version']) < $this->config->item("last_version")){
         <nav class="navbar top-navbar navbar-light" style="justify-content: space-between;">
 
             <div class="pull-left">
-                
                 <span class="nav-item" style="position: inline-block;"> <a class="nav-link sidebartoggler text-white waves-effect waves-dark" href="javascript:void(0)" style="font-size: 20px;"> <span class="mdi mdi-login-variant"></span> INICIO DE SESIÓN</a> </span>
-            </div>
-            <div class="pull-right">
-                <div class="navbar-collapse">
-
-                    <ul class="navbar-nav my-lg-0">
-                            <li class="nav-item pull-right"><a id="initial_user" data-toggle="tooltip" title="" data-original-title="Acerca de SIGEST" class="nav-link waves-effect waves-dark" onclick="swal({ title: 'SIGEST V2.0', text: 'Sus siglas significan: Subsistema de gestión de establecimientos', showConfirmButton: true });" href="javascript:void(0)"><span class="round round-inverse bg-inverse"><span class="mdi mdi-help" style="font-size: 35px;"></span></span></a> </li>
-                    </ul>
-                </div>
-            </div>
-            
+            </div>            
         </nav>
     </header>
     
