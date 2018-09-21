@@ -371,3 +371,6 @@ if(floatval($ua['version']) < $this->config->item("last_version")){
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+    <div class="container-fluid">
